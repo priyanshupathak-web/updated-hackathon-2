@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech Solutions - Modern Agriculture Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <h2>🌱 AgriTech Solutions</h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link active" data-section="home">Home</a></li>
+                        <li><a href="#problems" class="nav__link" data-section="problems">Problems</a></li>
+                        <li><a href="#weather" class="nav__link" data-section="weather">Weather</a></li>
+                        <li><a href="#crops" class="nav__link" data-section="crops">Crop Calendar</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section section__home active">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero__title">Transforming Agriculture Through Technology</h1>
+                    <p class="hero__subtitle">Addressing modern agricultural challenges with innovative solutions, weather intelligence, and crop planning tools</p>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="card overview-card">
+                        <div class="card__body">
+                            <h3>🌾 Agricultural Challenges</h3>
+                            <p>Explore the major problems facing modern agriculture and discover innovative solutions that can transform farming practices.</p>
+                            <img data-lazyloaded="1" src="http://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp" fetchpriority="high" decoding="async" width="31" height="20" data-src="http://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp" alt="" class="wp-image-11778 entered litespeed-loaded" style="width:62px" data-srcset="https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp 761w, https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif-300x98.webp 300w" data-sizes="(max-width: 761px) 100vw, 761px" data-ll-status="loaded" sizes="(max-width: 761px) 100vw, 761px" srcset="https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp 761w, https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif-300x98.webp 300w">
+                            <a href="https://llamacoder.together.ai/share/v2/H50kSIlsVISW8PwP">Agricultural Advisory(किसान सलाहकार प्रणाली)</a>
+                            
+                            <button class="btn btn--primary" data-section="problems">Explore Problems</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card overview-card">
+                        <div class="card__body">
+                            <h3>🌤️ Weather Intelligence</h3>
+                            <p>Learn how weather forecasting plays a crucial role in agricultural planning, irrigation, and crop management.</p>
+                            <button class="btn btn--primary" data-section="weather">Weather Insights</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card overview-card">
+                        <div class="card__body">
+                            <h3>📅 Crop Calendar</h3>
+                            <p>Access detailed month-by-month planting guides and seasonal crop information for optimal farming results.</p>
+                            <button class="btn btn--primary" data-section="crops">View Calendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editable Resources Section -->
+                <div class="resources-section">
+                    <h2>External Resources</h2>
+                    <p class="resources-note">below some goverment websites</p>
+                    <div class="resources-grid" id="homeResources">
+                        <div class="resource-block">
+                            <h4>Government Resources</h4>
+                            <div class="resource-links">
+                                <a href="https://agricoop.nic.in/" target="_blank" contenteditable="false" class="editable-link">Ministry of Agriculture</a>
+                                <a href="https://pmkisan.gov.in/" target="_blank" contenteditable="false" class="editable-link">PM Kisan Portal</a>
+                                <a href="https://mkisan.gov.in/" target="_blank" contenteditable="false" class="editable-link">mKisan Portal</a>
+                            </div>
+                        </div>
+                        <div class="resource-block">
+                            <h4>Research Institutes</h4>
+                            <div class="resource-links">
+                                <a href="https://icar.org.in/" target="_blank" contenteditable="false" class="editable-link">ICAR</a>
+                                <a href="https://www.icrisat.org/" target="_blank" contenteditable="false" class="editable-link">ICRISAT</a>
+                                <a href="https://www.irri.org/" target="_blank" contenteditable="false" class="editable-link">IRRI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section id="problems" class="section section__problems">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Agricultural Problems & Solutions</h1>
+                    <p>Modern agriculture faces numerous challenges. Here are the major problems and technology-driven solutions.</p>
+                </div>
+
+                <div class="problems-grid" id="problemsGrid">
+                    <!-- Problems will be dynamically loaded -->
+                </div>
+
+                <!-- Editable Resources for Problems -->
+                <iframe src="https://llamacoder.together.ai/share/v2/H50kSIlsVISW8PwP" height="400" width="700"></iframe>               
+                <div class="resources-section">
+                    <h2>Problem-Specific Resources</h2>
+                    <div class="resources-grid" id="problemsResources">
+                        <div class="resource-block">
+                            <h4>Climate Solutions</h4>
+                            <div class="resource-links">
+                                <a href="https://climatechange.gov.in/" target="_blank" contenteditable="false" class="editable-link">Climate Change Portal</a>
+                                <a href="https://www.fao.org/climate-change/en/" target="_blank" contenteditable="false" class="editable-link">FAO Climate Change</a>
+                            </div>
+                        </div>
+                        <div class="resource-block">
+                            <h4>Soil Health</h4>
+                            <div class="resource-links">
+                                <a href="https://soilhealth.dac.gov.in/" target="_blank" contenteditable="false" class="editable-link">Soil Health Card</a>
+                                <a href="https://www.fao.org/soils-portal/en/" target="_blank" contenteditable="false" class="editable-link">FAO Soils Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="section section__weather">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Weather Intelligence for Agriculture</h1>
+                    <p>Understanding weather patterns is crucial for successful farming. Here's how weather forecasting transforms agricultural practices.</p>
+                </div>
+
+                <div class="weather-importance" id="weatherImportance">
+                    <!-- Weather importance will be loaded dynamically -->
+                </div>
+
+<div class="weather-current">
+    <div class="card">
+        <div class="card__body">
+            <h3>Current Weather Conditions</h3>
+            
+            <!-- Weather Controls -->
+            
+            <!-- Weather Data Display in Columns -->
+            <div id="weatherData" class="weather-data-grid">
+                <!-- Primary weather display with large temperature -->
+                <div class="weather-primary">
+                    <div class="temperature-display">
+                        <iframe src="https://www.accuweather.com/" height="700" width="1200"></iframe>
+                        
+                        <div class="weather-description">
+                            <span id="weatherText"></span>
+                            <div class="location-info">
+                                <span id="cityName"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                <!-- 6-Column Weather Details Grid -->
+                <br>
+                <a href="https://www.accuweather.com/">if above link doesn't work click here</a>
+                <img data-lazyloaded="1" src="http://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp" fetchpriority="high" decoding="async" width="70" height="24" data-src="http://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp" alt="" class="wp-image-11778 entered litespeed-loaded" style="width:62px" data-srcset="https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp 761w, https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif-300x98.webp 300w" data-sizes="(max-width: 761px) 100vw, 761px" data-ll-status="loaded" sizes="(max-width: 761px) 100vw, 761px" srcset="https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif.webp 761w, https://sarkariresult.com.cm/wp-content/uploads/2024/10/live-gif-300x98.webp 300w">
+                <div class="weather-details-grid">
+                    <!-- Temperature, Humidity, Wind, Visibility, Pressure, UV Index columns -->
+                </div>
+
+                <!-- Agricultural Advisory Section -->
+                <div class="agricultural-advisory">
+                    <img src="https://media.tenor.com/UBNApyolWz4AAAAj/new-blinking-new-blinking-without-background.gif" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 50px; height: 70px; margin: 0px; width: 200px;" alt="New Blinking New Blinking Without Background Sticker - New ..." jsname="kn3ccd">
+                    <a href="https://llamacoder.together.ai/share/v2/H50kSIlsVISW8PwP">🌾 Agricultural Advisory किसान सलाहकार प्रणाली</a>
+                    <h4></h4>
+                    <div id="farmingAdvice" class="farming-advice"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+
+                <!-- Weather Resources -->
+                <div class="resources-section">
+                    <h2>Weather Service Resources</h2>
+                    <div class="resources-grid" id="weatherResources">
+                        <div class="resource-block">
+                            <h4>Government Weather Services</h4>
+                            <div class="resource-links">
+                                <a href="https://mausam.imd.gov.in/" target="_blank" contenteditable="false" class="editable-link">IMD Weather</a>
+                                <a href="https://www.tropmet.res.in/" target="_blank" contenteditable="false" class="editable-link">IITM Pune</a>
+                            </div>
+                        </div>
+                        <div class="resource-block">
+                            <h4>Agricultural Weather</h4>
+                            <div class="resource-links">
+                                <a href="https://agromet.imd.gov.in/" target="_blank" contenteditable="false" class="editable-link">Agromet Advisories</a>
+                                <a href="https://farmer.gov.in/" target="_blank" contenteditable="false" class="editable-link">Farmer Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crops Section -->
+        <section id="crops" class="section section__crops">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Agricultural Crop Calendar</h1>
+                    <p>Month-by-month planting guide for optimal crop production in Indian agricultural seasons.</p>
+                </div>
+
+                <!-- Season Overview -->
+                <div class="seasons-overview" id="seasonsOverview">
+                    <!-- Seasons will be loaded dynamically -->
+                </div>
+
+                <!-- Monthly Crop Calendar -->
+                <div class="crop-filter">
+                    <label for="monthFilter" class="form-label">Filter by Month:</label>
+                    <select id="monthFilter" class="form-control">
+                        <option value="">All Months</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+
+                <div class="crop-calendar" id="cropCalendar">
+                    <!-- Crop calendar will be loaded dynamically -->
+                </div>
+
+                <!-- Crop Resources -->
+                <div class="resources-section">
+                    <h2>Crop Information Resources</h2>
+                    <div class="resources-grid" id="cropResources">
+                        <div class="resource-block">
+                            <h4>Crop Varieties</h4>
+                            <div class="resource-links">
+                                <a href="https://seednet.gov.in/" target="_blank" contenteditable="false" class="editable-link">Seed Portal</a>
+                                <a href="https://ppvfra.gov.in/" target="_blank" contenteditable="false" class="editable-link">Plant Varieties</a>
+                            </div>
+                        </div>
+                        <div class="resource-block">
+                            <h4>Market Information</h4>
+                            <div class="resource-links">
+                                <a href="https://agmarknet.gov.in/" target="_blank" contenteditable="false" class="editable-link">AgMarkNet</a>
+                                <a href="https://enam.gov.in/" target="_blank" contenteditable="false" class="editable-link">eNAM Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 AgriTech Solutions. Empowering farmers with technology and knowledge.</p>
+                <p>MADE BY PRIYANSHU PATHAK AND TEAM COPYING OR CREATING SAME IS PUNISHABLE OFFENCE </p>
+
+                <p>Built with the each and every member contribution</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
