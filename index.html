@@ -274,12 +274,190 @@
     </main>
 
     <!-- Footer -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech Footer</title>
+    <style>
+        .footer {
+            background-color: #2d3748;
+            color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer__content {
+            text-align: center;
+        }
+
+        .footer__content p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        /* Team members container - horizontal layout */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px 0;
+        }
+
+        .team-container figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            min-width: 80px;
+        }
+
+        .team-container img {
+            border-radius: 50%;
+            margin: 10px 0;
+            width: 60px !important;
+            height: 60px !important;
+            object-fit: cover;
+            border: 3px solid #4299e1;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .team-container img:hover {
+            transform: scale(1.1);
+            border-color: #63b3ed;
+        }
+
+        .team-container figcaption {
+            font-size: 12px;
+            color: #cbd5e0;
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* Contact section */
+        .contact-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #4a5568;
+        }
+
+        .contact-section p {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .contact-section a {
+            color: #4299e1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-section a:hover {
+            color: #63b3ed;
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .team-container {
+                gap: 15px;
+            }
+            
+            .team-container img {
+                width: 50px !important;
+                height: 50px !important;
+            }
+
+            .team-container figcaption {
+                font-size: 11px;
+            }
+
+            .contact-section p {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-container {
+                gap: 10px;
+            }
+            
+            .team-container img {
+                width: 45px !important;
+                height: 45px !important;
+            }
+        }
+    </style>
+</head>
+<body>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <p>&copy; 2025 AgriTech Solutions. Empowering farmers with technology and knowledge.</p>
-                <p>MADE BY PRIYANSHU PATHAK AND TEAM COPYING OR CREATING SAME IS PUNISHABLE OFFENCE </p>
+                
+                <!-- Team members in one line -->
+                <div class="team-container">
+                    <figure>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHSZTp6q4rbZw/profile-displayphoto-shrink_100_100/B56ZkeioQtKMAU-/0/1757154019689?e=1759968000&v=beta&t=1ZwRMI-acUwVDWGYdNk51eEzIT6dq3c0bycNUR-xV4Q" 
+                             alt="Priyanshu Pathak">
+                        <figcaption>Priyanshu Pathak</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                             alt="Rishabh Yadav">
+                        <figcaption>Rishabh Yadav</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                             alt="Vidhi Shukla">
+                        <figcaption>Vidhi Shukla</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                             alt="Samiksha Saxena">
+                        <figcaption>Samiksha Saxena</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                             alt="Shivam Kumar">
+                        <figcaption>Shivam Kumar</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" 
+                             alt="Pilot Sameer Khan">
+                        <figcaption>Pilot Sameer Khan</figcaption>
+                    </figure>
+                </div>
 
+                <!-- Contact Information -->
+                <div class="contact-section">
+                    <p>Contact us:</p> 
+                    <p><a href="mailto:surajpathak503@gmail.com">techsquard@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+916388450038">+91 6388450038</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
                 <p>Built with the each and every member contribution</p>
             </div>
         </div>
@@ -287,5 +465,4 @@
 
     <script src="app.js"></script>
 </body>
-
 </html>
