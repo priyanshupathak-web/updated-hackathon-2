@@ -1822,7 +1822,7 @@ function initErrorHandling() {
 class WeatherApp {
     constructor() {
         this.apiKey = '0d11aacce8534c3fa69174135252109';
-        this.baseUrl = 'http://api.weatherapi.com/v1/current.json';
+        this.baseUrl = 'https://api.weatherapi.com/v1/current.json';
         this.init();
     }
 
@@ -3155,3 +3155,4 @@ document.addEventListener('DOMContentLoaded', function() {
 window.loadEnhancedCropCalendar = loadEnhancedCropCalendar;
 
 console.log('Enhanced Agricultural Calendar 2025 script loaded - All 12 months available');
+
