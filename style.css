@@ -2577,6 +2577,14 @@ select[multiple] option:checked {
 .stat-item {
   flex: 1;
 }
+.query-input{
+  width: 1000px;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 .stat-label {
   font-size: var(--font-size-xs);
@@ -5125,6 +5133,14 @@ html {
     gap: 12px;
     justify-content: flex-end;
     background: #36393f;
+}
+.submit--button{
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+    color: var(--color-btn-primary-text);
+    font-weight: var(--font-weight-semibold);
+    padding: var(--space-10) var(--space-20);
+    box-shadow: var(--shadow-sm);
+
 }
 
 .btn {
