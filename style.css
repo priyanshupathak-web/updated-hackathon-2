@@ -5220,3 +5220,328 @@ html {
         padding: 20px;
     }
 }
+/* Blur + Overlay Styles */
+.lock-blur {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 10000;
+  backdrop-filter: blur(8px) grayscale(30%);
+  background: rgba(240,240,240,0.6);
+}
+#lock-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 11000;
+}
+.lock-modal {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  box-shadow: 0 0 30px 6px rgba(64,64,64,0.18);
+  border-radius: 10px;
+  padding: 40px 35px 30px 35px;
+  text-align: center;
+  z-index: 11100;
+  min-width: 300px;
+}
+#lock-overlay input,
+#lock-overlay button {
+  width: 220px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+#lock-overlay button {
+  background: #267326;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blur-content:not(#lock-overlay):not(.lock-modal), .blur-content *:not(.lock-modal) {
+  pointer-events: none !important;
+  filter: blur(7px) grayscale(20%);
+}
+
+
+/* ==========================================
+   QUERY SECTION STYLING - Enhanced Form
+   ========================================== */
+
+/* Query Section Styling */
+.query-section {
+    background: linear-gradient(135deg, var(--color-bg-1) 0%, var(--color-bg-3) 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--space-32);
+    margin-bottom: var(--space-32);
+    border: 2px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.query-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-teal-400));
+}
+
+.query-section__title {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-16);
+    font-weight: var(--font-weight-bold);
+}
+
+.query-section__icon {
+    margin-right: var(--space-12);
+    font-size: var(--font-size-3xl);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.query-section__description {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-24);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+}
+
+.query-form {
+    display: grid;
+    gap: var(--space-20);
+}
+
+.query-form .form-group {
+    margin-bottom: 0;
+}
+
+.query-form .form-control {
+    padding: var(--space-16) var(--space-20);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-md);
+    transition: all var(--duration-normal) var(--ease-standard);
+    background: var(--color-surface);
+    color: var(--color-text);
+}
+
+.query-form .form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(var(--color-teal-500-rgb), 0.1);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.query-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.character-count {
+    text-align: right;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-8);
+}
+
+.character-count.warning {
+    color: var(--color-warning);
+    font-weight: var(--font-weight-medium);
+}
+
+.character-count.error {
+    color: var(--color-error);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Query Status Messages */
+.query-status {
+    margin-top: var(--space-20);
+    padding: var(--space-16) var(--space-20);
+    border-radius: var(--radius-base);
+    font-weight: var(--font-weight-medium);
+    animation: slideIn 0.3s ease;
+}
+
+.query-status.success {
+    background: linear-gradient(45deg, var(--color-bg-3), rgba(var(--color-success-rgb), 0.1));
+    color: var(--color-success);
+    border: 1px solid rgba(var(--color-success-rgb), 0.2);
+}
+
+.query-status.error {
+    background: linear-gradient(45deg, var(--color-bg-4), rgba(var(--color-error-rgb), 0.1));
+    color: var(--color-error);
+    border: 1px solid rgba(var(--color-error-rgb), 0.2);
+}
+
+.query-status.loading {
+    background: linear-gradient(45deg, var(--color-bg-1), rgba(var(--color-info-rgb), 0.1));
+    color: var(--color-info);
+    border: 1px solid rgba(var(--color-info-rgb), 0.2);
+}
+
+/* Enhanced Button Styling for Query Form */
+.query-form .btn--full-width {
+    margin-top: var(--space-16);
+    padding: var(--space-16) var(--space-24);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    background: linear-gradient(45deg, var(--color-primary), var(--color-teal-400));
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.query-form .btn--full-width::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.query-form .btn--full-width:hover::before {
+    left: 100%;
+}
+
+.query-form .btn--full-width:hover {
+    background: linear-gradient(45deg, var(--color-teal-600), var(--color-primary));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(var(--color-teal-500-rgb), 0.4);
+}
+
+.query-form .btn--full-width:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Form Grid Layout for Better Organization */
+@media (min-width: 768px) {
+    .query-form .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-20);
+    }
+
+    .query-form .form-row .form-group {
+        margin-bottom: 0;
+    }
+}
+
+/* Loading Animation for Submit Button */
+.query-form .btn-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive Design for Query Section */
+@media (max-width: 768px) {
+    .query-section {
+        padding: var(--space-24);
+        margin-left: calc(-1 * var(--space-16));
+        margin-right: calc(-1 * var(--space-16));
+        border-radius: 0;
+    }
+
+    .query-section__title {
+        font-size: var(--font-size-xl);
+    }
+
+    .query-form .form-control {
+        padding: var(--space-12) var(--space-16);
+    }
+
+    .query-textarea {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .query-section {
+        padding: var(--space-20);
+    }
+
+    .query-section__title {
+        font-size: var(--font-size-lg);
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-8);
+    }
+
+    .query-section__icon {
+        margin-right: 0;
+        margin-bottom: var(--space-8);
+    }
+}
+
+/* Dark mode adjustments for query section */
+@media (prefers-color-scheme: dark) {
+    .query-section {
+        background: linear-gradient(135deg, var(--color-bg-1), var(--color-bg-3));
+        border-color: var(--color-border);
+    }
+
+    .query-form .form-control {
+        background: var(--color-surface);
+        border-color: var(--color-border);
+        color: var(--color-text);
+    }
+}
+
+[data-color-scheme="dark"] .query-section {
+    background: linear-gradient(135deg, var(--color-bg-1), var(--color-bg-3));
+    border-color: var(--color-border);
+}
+
+[data-color-scheme="dark"] .query-form .form-control {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+/* Animation for form interactions */
+.query-form .form-control:invalid {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Success checkmark animation */
+.query-status.success::before {
+    content: '✅';
+    margin-right: var(--space-8);
+    animation: checkmark 0.5s ease-in-out;
+}
+
+@keyframes checkmark {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* ==========================================
+   END QUERY SECTION STYLING
+   ========================================== */
